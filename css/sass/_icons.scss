@@ -1,0 +1,83 @@
+.icon{
+  max-width: 64px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 56px;
+  }
+
+  &:hover{
+    transform: translate(0,-4px,0);
+  }
+}
+
+.icon-s{
+  max-width: 44px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 32px;
+  }
+
+  &:hover{
+    transform: translate(0,-4px,0);
+  }
+}
+
+.icon-xs{
+  max-width: 24px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 24px;
+  }
+
+  &:hover{
+    transform: translate(0,-4px,0);
+  }
+}
+
+.icon-m{
+  max-width: 96px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 80px;
+  }
+}
+
+.icon-l{
+  max-width: 120px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 96px;
+  }
+}
+
+.icon-xl{
+  max-width: 172px;
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 144px;
+  }
+
+}
+
+.icon-app{
+  max-width: 56px;
+  max-height: 56px;
+
+  transition: .5s ease;
+
+  @include responsive(s){
+    max-width: 56px;
+    max-height: 56px;
+  }
+
+  &:hover{
+    transform: translate3d(0,-6px,0);
+    opacity: .8;
+  }
+}

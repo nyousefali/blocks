@@ -1,0 +1,185 @@
+.btn {
+  display: inline-block;
+  color: $white-light;
+  transition: .6s ease;
+  padding: 14px 32px 14px 32px;
+  text-align: center;
+  border: 0;
+
+  background: #45459F;
+  border-radius: 32px;
+
+  @include typeface-1(h7, desktop);
+  @include responsive(s) {
+    @include typeface-1(h7, mobile);
+  }
+
+  position: relative;
+
+  &:hover{
+    opacity: .8;
+  }
+}
+
+.btn-secondary {
+  display: inline-block;
+  color: $white-light;
+  transition: .6s ease;
+  padding: 18px 40px;
+  text-align: center;
+  border: 0;
+
+  background: transparent;
+  border: 2px solid #2B3348;
+  border-radius: 8px;
+
+  @include typeface-1(h7, desktop);
+  @include responsive(s) {
+    @include typeface-1(h7, mobile);
+  }
+
+  &:hover{
+    //opacity: .8;
+    border: 2px solid $black-light;
+    background: $black-lighten;
+  }
+}
+
+
+a {
+  @include typeface-2(p2, desktop);
+  text-decoration: none;
+  color: $white-normal;
+  transition: 0.5s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.link{
+  display: inline-block;
+  color: $primary-normal;
+
+  @include typeface-1(h6, desktop);
+  @include responsive(s) {
+    @include typeface-1(h6, mobile);
+  }
+
+  padding: 8px 8px 8px 36px;
+  position: relative;
+
+
+  &::before{
+    content: '';
+    position: absolute;
+
+    top: 50%;
+    left: 0%;
+
+    width: 24px;
+    height: 24px;
+
+    transform: translate(-50%, -50%) translate3d(10px,0,0);
+
+    background-image: url('../svg/icon-arrow-right.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: .5s ease;
+  }
+
+  &:hover{
+
+    &::before{
+      left: 5%;
+    }
+
+    padding: 8px 8px 8px 56px;
+  }
+}
+
+.link-external{
+  padding: 8px;
+
+  color: $white-light;
+  @include typeface-1(h6, desktop);
+  @include responsive(s) {
+    @include typeface-1(h6, mobile);
+  }
+
+  position: relative;
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 0%;
+    height: 1px;
+    background-color: $white-light;
+    transition: 1s ease;
+  }
+
+  &:hover{
+    &::after{
+      width: 90%;
+    }
+  }
+}
+
+.btn-circle{
+  display: inline-block;
+  background-color: $primary-dark;
+  padding: 32px 28px;
+  border-radius: 50%;
+
+  &:hover{
+    background-color: $primary-light;
+    transform: scale(1.4);
+  }
+
+  
+}
+
+.link-person{
+  transform: translate3d(0,0,0);
+  transition: .5s ease;
+  &:hover{
+    transform: translate3d(0,-10px,0);
+  }
+}
+
+.button {
+  transition: 0.5s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+
+input, select, option, textarea{
+  padding: 10px 12px;
+  background-color: $black-light;
+  border: 0;
+  border-radius: 4px;
+  color: $white-light;
+  width: 100%;
+
+  @include typeface-2(p3, desktop);
+}
+
+input[type=date], select, option{
+  height: 44px;
+}
+
+/*
+select{
+  appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+*/

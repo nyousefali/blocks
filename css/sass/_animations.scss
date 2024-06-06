@@ -1,0 +1,256 @@
+.fig2-wave1{
+    animation: fig-waves 5s ease infinite alternate;
+}
+.fig2-wave2{
+    animation: fig-waves 5s ease infinite 1s alternate;
+}
+.fig2-wave3{
+    animation: fig-waves 4s ease infinite 2s alternate;
+}
+.fig2-wave4{
+    animation: fig-waves 6s ease infinite 3s alternate;
+}
+.fig2-wave5{
+    animation: fig-waves 5s ease infinite 5s alternate;
+}
+
+@keyframes fig-waves{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    50%{
+        transform: translate3d(-200px,0,0);
+    }
+    100%{
+        transform: translate3d(300px,0,0);
+    }
+}
+
+.cursor-ny{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+
+    z-index: 200;
+
+    transform: translate(-50%, -50%) scale(0.7);
+
+    animation: cursor-ny 10s ease infinite alternate;
+}
+
+@keyframes cursor-ny{
+    0%,20%{
+        top: 30%;
+        left: 40%;
+    }
+    50%{
+        top: 50%;
+        left: 60%;
+    }
+    90%,100%{
+        top: 70%;
+        left: 30%;
+    }
+}
+
+.fade-in{
+    animation: fade-in 2s ease;
+}
+
+.stamp-ny1, .stamp-ny2{
+    animation: fade-in 2s 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.grid-photo-1{
+ animation: grid-photo-1 10s ease infinite alternate; 
+}
+
+@keyframes grid-photo-1{
+    0%{
+        transform: translate3d(0,-240px,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+
+.grid-photo-2{
+    animation: grid-photo-2 20s ease infinite alternate; 
+}
+   
+@keyframes grid-photo-2{
+    0%{
+        transform: translate3d(0,-320px,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+
+.letter-ny1, .letter-ny2{
+    animation: letter-ny 2.5s ease forwards;
+    stroke-dashoffset: 84;
+}
+
+@keyframes letter-ny{
+    0%,10%{
+        fill-opacity: 0;
+        stroke-dasharray: 0 100;
+    }
+    60%{
+        fill-opacity: 0;
+        stroke-dasharray: 100 0;
+    }
+    100%{
+        fill-opacity: 1;
+        stroke-dasharray: 100 0;
+    }
+}
+
+.div-salutation{
+    transform: translate3d(0,-300px,0);
+    animation: div-salutation 4s 0.3s ease-in-out forwards;
+}
+
+@keyframes div-salutation{
+    0%{
+        transform: translate3d(0,-300px,0);
+    }
+    100%{
+        transform: translate3d(0,8px,0);
+    }
+}
+
+.signature{
+    animation: signature 4s ease-in-out infinite alternate;
+    //stroke-dasharray: 0 600;
+}
+
+@keyframes signature{
+    0%{
+        stroke-width: 0;
+        stroke-dasharray: 0 600;
+    }
+    60%,100%{
+        stroke-width: 2;
+        stroke-dasharray: 100 0;
+    }
+}
+
+.signature2{
+    animation: signature 4s ease-in-out infinite alternate;
+    transform: scale(3);
+
+    @include responsive(s){
+        transform: scale(2.4);
+    }
+    //stroke-dasharray: 0 600;
+}
+
+
+// ANIMAÇÕES ÍCONES SECTION I AM
+.icon-design{
+    animation: signature 4s ease-in-out infinite alternate;
+}
+
+.icon-code1{
+    animation: code1 4s ease-in-out infinite alternate;
+}
+
+.icon-code2{
+    animation: code2 4s ease-in-out infinite alternate; 
+}
+
+@keyframes code1{
+    0%{
+        transform: translate3d(-24px,0,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+
+@keyframes code2{
+    0%{
+        transform: translate3d(24px,0,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+}
+
+.icon-square{
+    animation: square 4s ease-in-out infinite alternate;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+@keyframes square{
+    0%{
+        transform: rotateX(160deg) rotateY(60deg) rotateZ(10deg);
+    }
+    100%{
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+
+.icon-react{
+    animation: icon-react 4s ease infinite alternate;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+
+@keyframes icon-react{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/*==========================================================*/
+
+/*==========================================================*/
+
+/*==========================================================*/
+
+/*==========================================================*/
+
+.light1{
+    animation: light1 5s ease infinite alternate;
+}
+
+@keyframes light1{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(5px,-25px,0);
+    }
+}
+
+/*==========================================================*/
+
+.light2{
+    animation: light2 5s ease 1s infinite alternate;
+}
+
+@keyframes light2{
+    0%{
+        transform: translate3d(0,0,0);
+    }
+    100%{
+        transform: translate3d(20px,20px,0);
+    }
+}

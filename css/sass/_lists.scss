@@ -1,0 +1,47 @@
+.list{
+    list-style: none;
+  
+    .item-list{
+        color: $gray-7;
+        position: relative;
+        padding-left: 48px;
+        transition: .5s ease;
+        cursor: pointer;
+
+        &:hover{
+            padding-left: 56px;
+        }
+
+        @include typeface-2(p2, desktop);
+        @include responsive(s) {
+            @include typeface-2(p2, mobile);
+            padding-left: 32px;
+            &:hover{
+                padding-left: 32px;
+            }
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 24px;
+            display: block;
+            transform: translate(-50%, -50%);
+
+            width: 40px;
+            height: 40px;
+
+            background-image: url('../svg/icon-check2.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @include responsive(s){
+                left: 8px;
+            }
+        }
+    }
+
+  }
+
+

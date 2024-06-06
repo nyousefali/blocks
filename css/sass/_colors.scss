@@ -1,0 +1,140 @@
+// Colors of project
+
+// Brand-colors
+$primary-normal: #1850E1;
+$primary-dark: #1141BD;
+$primary-light: #4271EB;
+
+$secondary-normal: #4AA6F7;
+$secondary-dark: #2082D9;
+$secondary-light: #6BBAFF;
+
+// Neutral-colors
+$black-normal: #0C1221;
+$black-dark: #030917;
+$black-light: #12192B;
+$black-lighten: #2E374D;
+
+$black-darken: #090F1D;
+
+$white-normal: #F5F7F7;
+$white-dark: #EDEFF0;
+$white-light: #FAFCFC;
+
+// Gray Scale
+$gray-1: #252F44;
+$gray-2: #333D53;
+$gray-3: #4F596D;
+$gray-4: #6A7386;
+$gray-5: #868EA0;
+$gray-6: #9FA5B0;
+$gray-7: #C2C6D0;
+
+
+// Auxiliary colors
+$red-normal: #eb3d3d;
+$red-dark: #d03333;
+$red-light: #f05454;
+
+$green-normal: #0BB07B;
+$green-dark: #06A06F;
+$green-light: #23C691;
+
+$yellow-normal: #ffce52;
+$yellow-dark: #d9b043;
+$yellow-light: #ffd76b;
+
+
+.color-white{
+    color: $white-normal;
+}
+
+.color-black{
+    color: $black-light;
+}
+
+.color-black-lighten{
+    color: $black-lighten;
+}
+
+.color-primary{
+    color: $primary-normal;
+}
+
+.color-secondary{
+    color: $secondary-normal;
+}
+
+.color-gradient{
+    display: inline-block;
+    background: linear-gradient(224.78deg, #7cc2ff 8.12%, #5e98cb 92.21%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.color-gradient2{
+    display: inline-block;
+    background: linear-gradient(224.78deg, #1850E1 8.12%, #0D2C7B 92.21%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.color-gradient-creatorpush{
+    display: inline-block;
+    background: linear-gradient(217.58deg, #8D23F8 0.58%, #180D90 97.98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.color-gradient-axlepush{
+    display: inline-block;
+    background: linear-gradient(217.58deg, #E741E7 0.58%, #4100C8 97.98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.label{
+    background: linear-gradient(224.78deg, $primary-normal 8.12%, $secondary-dark 92.21%); 
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 2px;
+
+    color: $black-dark;
+}
+
+.bg-black-lighten{
+    background-color: $black-lighten;
+}
+
+.color-gray{
+    color: $gray-5;
+}
+
+.color-black-blue{
+    color: $black-lighten;
+}
+
+.color-red{
+    color: $red-normal;
+}
+
+.color-green{
+    color: $green-normal;
+}
+
+.color-yellow{
+    color: $yellow-normal;
+}
+
+.bg-red{
+    background-color: $red-normal;
+}
+
+.bg-green{
+    background-color: $green-normal;
+}
+
+.bg-yellow{
+    background-color: $yellow-normal;
+}
+

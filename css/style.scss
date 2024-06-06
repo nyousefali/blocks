@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import 'sass/colors';
+@import 'sass/layout';
+@import 'sass/spacing';
+@import 'sass/typography';
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+
+    background-color: #CDCDCD;
+
+    &::-webkit-scrollbar{
+        padding-right: 4px;
+        width: 20px;
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;        /* color of the tracking area */
+    }
+
+    &::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background: $gray-1;
+        border: 6px solid $black-dark;
+    }
+}
+
+.border{
+    border: 1px solid red;
+}
+
+.border-radius{
+  border-radius: 4px;
+}
+
+.hidden{
+    overflow: hidden;
+}
+
+.relative{
+    position: relative;
+}
+
+svg,img{
+  width: 100%;
+  //height: auto;
+}
+
+@import 'sass/menu';
+@import 'sass/bgs';
+@import 'sass/lists';
+@import 'sass/icons';
+@import 'sass/buttons';
+@import 'sass/animations';
+
