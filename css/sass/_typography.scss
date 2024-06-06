@@ -410,6 +410,8 @@ b{
 
   max-width: 700px;
 
+  color: rgba(86, 85, 205, 0.2);
+
   @include responsive(s){
     font-size: 120px;
   }
@@ -418,7 +420,7 @@ b{
 }
 
 .text-unleash{
-  color: #45459F;
+  color: $primary-normal;
 
   font-size: 32px;
 

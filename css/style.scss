@@ -9,8 +9,6 @@
 @import 'sass/spacing';
 @import 'sass/typography';
 
-
-
 html{
     scroll-behavior: smooth;
 }
@@ -18,7 +16,7 @@ html{
 body{
     width: 100%;
 
-    background-color: #CDCDCD;
+    background-color: $white-light;
 
     &::-webkit-scrollbar{
         padding-right: 4px;
@@ -32,8 +30,8 @@ body{
 
     &::-webkit-scrollbar-thumb{
         border-radius: 10px;
-        background: $gray-1;
-        border: 6px solid $black-dark;
+        background: $primary-normal;
+        border: 6px solid $white-light;
     }
 }
 

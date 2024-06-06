@@ -58,12 +58,11 @@ document.addEventListener("DOMContentLoaded", () => {
     /*--=========== TIMELINE LOADING E HERO ============- */
     var tl1 = gsap.timeline();
 
-
     tl1
     .to('.screen-loading', {
         duration: 2,
         opacity: 0, 
-        delay: 4,
+        delay: 3,
         ease: "power4.out",
     })
     .from("header div", {
@@ -86,9 +85,10 @@ document.addEventListener("DOMContentLoaded", () => {
         ease: "power4.out",
     }, '-=1.9')
     .from("#text-blocks span", {
-        duration: 2,  
+        duration: 3,  
         opacity: 0, 
-        x: -200,
+        x: -500,
+        y: 50,
         stagger:{each: 0.2},
         ease: "power4.out",
     }, '-=1.9')

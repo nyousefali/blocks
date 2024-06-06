@@ -81,7 +81,7 @@
     transform: translate(-50%, -50%);
 
     z-index: 999;
-    background-color: #CDCDCD;
+    background-color: $white-light;
     position: fixed;
 
     display: flex;
@@ -99,7 +99,7 @@
     width: 200px;
     height: 50px;
 
-    background-color: #fff;
+    background-color: $white-normal;
     position: relative;
 
     &::after{
@@ -111,9 +111,9 @@
         width: 50%;
         height: 100%;
 
-        background-color: #45459F;
+        background-color: $primary-normal;
 
-        animation: bar-loading 4s ease forwards;
+        animation: bar-loading 3s ease forwards;
     }
 }
 

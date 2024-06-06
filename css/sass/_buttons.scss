@@ -6,7 +6,7 @@
   text-align: center;
   border: 0;
 
-  background: #45459F;
+  background: $primary-normal;
   border-radius: 32px;
 
   @include typeface-1(h7, desktop);
