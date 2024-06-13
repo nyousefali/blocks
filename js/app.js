@@ -71,12 +71,14 @@ document.addEventListener("DOMContentLoaded", () => {
         stagger:{each: 0.2},
         ease: "power4.out",
     }, '-=1.5')
+    /*
     .from(".spline", {
         duration: 1, 
         opacity: 0,
         y: 200,
         ease: "power4.out",
     }, '-=0.2')
+    */
     .from(".hero div", {
         duration: 2,  
         opacity: 0, 

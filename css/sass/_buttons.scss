@@ -1,12 +1,12 @@
 .btn {
   display: inline-block;
-  color: $white-light;
+  color: $primary-light;
   transition: .6s ease;
   padding: 14px 32px 14px 32px;
   text-align: center;
   border: 0;
 
-  background: $primary-normal;
+  background: $white-normal;
   border-radius: 32px;
 
   @include typeface-1(h7, desktop);
